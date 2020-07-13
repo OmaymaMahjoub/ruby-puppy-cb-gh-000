@@ -26,5 +26,5 @@ class Dog
   def self.save
     add<<self
   end
-  
+
 end
