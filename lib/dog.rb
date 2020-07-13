@@ -9,7 +9,7 @@ class Dog
     def self.save
       @@all<<self
     end
-    save
+    self.save()
   end
 
   def self.print_all
