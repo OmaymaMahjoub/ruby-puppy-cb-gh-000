@@ -4,13 +4,13 @@ class Dog
 
   attr_reader :name
 
-  def self.save(name)
+  def self.save
     @@all<<self
   end
 
   def initialize(name)
     @name=name
-    save(name)
+    @@all=save()
   end
 
   def self.print_all
