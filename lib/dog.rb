@@ -6,12 +6,12 @@ class Dog
 
   def initialize(name)
     @name=name
-    def self.save
-      @@all<<self
-    end
+
     save()
   end
-
+  def self.save
+    @@all<<self
+  end
   def self.print_all
     @@all.each do |d|
       puts d.name
