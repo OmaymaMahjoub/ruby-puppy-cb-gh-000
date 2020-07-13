@@ -4,6 +4,10 @@ class Dog
 
   attr_reader :name
 
+  def self.save
+    @@all<<self
+  end
+
   def initialize(name)
     @name=name
     save()
@@ -21,10 +25,6 @@ class Dog
 
   def self.all
     @@all
-  end
-
-  def self.save
-    @@all<<self
   end
 
 end
